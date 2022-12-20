@@ -124,8 +124,9 @@ The board contains an on-board microphone which makes it a perfect choice for ou
 
 ## 5.The final project status (including demo videos)
 ### final design
-![SystemDesign](https://user-images.githubusercontent.com/92397424/208532200-da3be9a4-3b6c-44bd-9372-304cb05cf2b7.PNG)
-)
+![image](https://user-images.githubusercontent.com/57846377/208568431-2147d1ed-58c0-481e-a679-c89e8fbb0a57.png)
+
+
 ### How the System looks in real life:
 ### System Flow:
 ### Demo videos of the system:
