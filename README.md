@@ -3,6 +3,24 @@
 ### Wiki Page
 <a href="https://github.com/shalan/CSCE4301-WiKi/wiki/G6:-Smart-Lighting-System"> Check Wiki for details</a>
 
+
+## How to Build it
+### Circuit
+-  connect 4 LEDs anodes with A0,A1,A2, and A3 and their cathodes to the GND in the arduino nano 33 BLE
+-  connect the ESP32 Tx and Rx with the Rx and Tx (opposites) with the arduino nano, and the GND with GND
+-  connect the RTC DS3231 with the Arduino nano: SCL to A5, SDA to A4, and VCC to 3.3v and GND to GND
+-  connect the light sensor GNd to GND of arduino nano and the to A6
+
+### Software Build
+- open the arduino IDE 2.0 on your PC and connect your PC USB to the arduino via a micro usb cable
+- open the .ino file
+- build the project and deploy it on the arduino (make sure to have the required libraries)
+
+### How to Use it
+
+
+
+
 ## 1.Overview
 ### Motivation
 Smart home lighting systems help solve such problems and save power/electricity through automatic control, scheduled control, and monitoring consumption. Our project is a smart lighting system that satisfies the convenience need to users (its easier to power lights on and off via remote control) in addition to energy saving and consumption monitoring needs.
