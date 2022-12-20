@@ -81,6 +81,7 @@ The main loop consists of a for loop that loops with an index i that represents 
 ![image](https://user-images.githubusercontent.com/57846377/208568431-2147d1ed-58c0-481e-a679-c89e8fbb0a57.png)
 
 ### Demo:
+<a href="https://youtu.be/nhetrHVt4G4">Watch on Youtube</a>
 
 ## 8. References
 - https://docs.arduino.cc/resources/datasheets/ABX00031-datasheet.pdf
