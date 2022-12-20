@@ -1,4 +1,4 @@
-# G6: Smart Lighting System
+# Smart Lighting System
 
 ### Outline
 - (1) Background and Motivation
@@ -7,7 +7,8 @@
 - (4) Iterations done
 - (5) The final project status including demo videos
 - (6) Limitations and Future work
-- (7) Conclusions and (8) References
+- (7) Conclusions
+- (8) References
 
 ### authors
 **Kareem Kassab  900182771** <br>
@@ -15,7 +16,7 @@
 **Mohamed Roshdy  900183935**<br>
 **Abdelharman Fawzy  900183004**<br>
 
-## Proposed Idea:
+## 1. Background and Motivation
 
 ### Problem to Solve(need):
 We live in a time where energy is needed for almost everything in the current lifestyle; however, such energy is not free; thus, it must be used wisely and saved whenever possible. Smart home lighting systems help solve such problems and save power/electricity through automatic control, scheduled control, and monitoring consumption. Our project is a smart lighting system that satisfies the convenience need to users (its easier to power lights on and off via remote control) in addition to energy saving and consumption monitoring needs.
@@ -23,7 +24,7 @@ We live in a time where energy is needed for almost everything in the current li
 ### Overview:
 a smart lighting system will be needed in all of the future's smart homes. The system will have a set of features to maximize user control. The system should utilize multiple sensors to turn lights on and off based on people's presence in the room to save energy when people go out; Also, it should utilize a light sensor to turnoff/dim lights when there is natural light. Users should be able to set schedule to have lights automatically turned on at certain times of the day. for more convenience, users should be able to turn on/off the lights when they clap in the room (mode should be turned on and off)(luxury feature). based on power and usage time, the system will be calculating power consumption and sending this data to the user. 
 
-
+## 2. Background and Motivation
 ### Proposed Features:
 * Light on clap
 * Light on motion
@@ -32,6 +33,7 @@ a smart lighting system will be needed in all of the future's smart homes. The s
 * Send power consumption statistics to cloud and in a message
 
 
+## 3. Design (S/W and H/W)
 ### Proposed Hardware Components
 * Light bulb / LED with range
 * Dimmer 
@@ -106,3 +108,11 @@ The board contains an on-board microphone which makes it a perfect choice for ou
 ### How the system works:
 
 ### demo videos of the system:
+
+## 8. References
+- https://docs.arduino.cc/resources/datasheets/ABX00031-datasheet.pdf
+- https://forum.arduino.cc/t/lighting-leds-by-time-schedule/118481
+- https://forum.arduino.cc/t/turn-led-on-with-rtc/620120
+- https://forum.arduino.cc/t/serial-communication-between-arduino-nano-33-ble-sense-and-esp32/931623/2
+- https://forum.arduino.cc/t/connecting-esp32-with-arduino-nano-33-ble-sense-usinc-i2c/886302
+- https://www.programmingboss.com/2021/04/esp32-arduino-serial-communication-with-code.html
