@@ -10,7 +10,7 @@
 - (7) Conclusions
 - (8) References
 
-### authors
+### Authors
 **Kareem Kassab  900182771** <br>
 **Elsayed Zaki  900181637** <br>
 **Mohamed Roshdy  900183935**<br>
@@ -19,14 +19,27 @@
 ## 1. Background and Motivation
 
 ### Problem to Solve(need):
-We live in a time where energy is needed for almost everything in the current lifestyle; however, such energy is not free; thus, it must be used wisely and saved whenever possible. Smart home lighting systems help solve such problems and save power/electricity through automatic control, scheduled control, and monitoring consumption. Our project is a smart lighting system that satisfies the convenience need to users (its easier to power lights on and off via remote control) in addition to energy saving and consumption monitoring needs.
+We live in a time where energy is needed for almost everything in the current lifestyle; however, such energy is not free; thus, it must be used wisely and saved whenever possible. Furthermore, there is a convenience need that is fulfilled in smart housing systems, lighting included. a smart lighting system is needed to provide more convenience to users to turn lights on and off
+
+### Motivation
+Smart home lighting systems help solve such problems and save power/electricity through automatic control, scheduled control, and monitoring consumption. Our project is a smart lighting system that satisfies the convenience need to users (its easier to power lights on and off via remote control) in addition to energy saving and consumption monitoring needs.
 
 ### Overview:
 a smart lighting system will be needed in all of the future's smart homes. The system will have a set of features to maximize user control. The system should utilize multiple sensors to turn lights on and off based on people's presence in the room to save energy when people go out; Also, it should utilize a light sensor to turnoff/dim lights when there is natural light. Users should be able to set schedule to have lights automatically turned on at certain times of the day. for more convenience, users should be able to turn on/off the lights when they clap in the room (mode should be turned on and off)(luxury feature). based on power and usage time, the system will be calculating power consumption and sending this data to the user. 
 
-## 2. Background and Motivation
+## 2. Requirements and Features
+### User Requirements
+- users should be able to turn lights on and off without reaching out to wall switches
+- users should be able to control lights through their voice
+- users should be able to control lights through their phone
+- users should be able to set lighting schedules from their phone
+- users should be able to set autmatic lighting when it gets dark
+- users should be able to monitor their consumption
+- 
 ### Proposed Features:
 * Light on clap
+* Light on voice command
+* control intencity via voice command
 * Light on motion
 * Light on time
 * Turnoff/Dim light on natural light
@@ -34,20 +47,15 @@ a smart lighting system will be needed in all of the future's smart homes. The s
 
 
 ## 3. Design (S/W and H/W)
-### Proposed Hardware Components
+### Used Hardware Components
 * Light bulb / LED with range
-* Dimmer 
-* //LED capacitive touch dimmer PWM control board 
 * Light sensor
-* Infrared sensor
-* Sound sensor
-* RTC module
-* STM32 board
-* ESP32 board
+* RTC D3231 module
+* Arduino Nano 33 BLE board
+* ESP32 WROOM-32 board
 
-### Software:
-- STM32CubeMX
-- Keil µVision
+### Hardware Design
+### Software Design
 
 ## 4.Iterations done
 ## Phase1 Update:
@@ -84,11 +92,12 @@ https://drive.google.com/drive/u/0/folders/1edW1XKyQb-ulQsgd0SlEA5-SkaUFtDj7
 ### Phase 2 Update:
 
 ### Design Update:
-One major design choice was made for the project as we decided to use Arduino Nano 33 BLE board as the main board in our design as it is more suitable to host the machine learning model for our project. 
-The board contains an on-board microphone which makes it a perfect choice for our project as it allows us to take the input (the user's voice) run the model on it and take decisions based on it. The board also supports WIFI which eliminates the need to use the ESP32 board in order to communicate with the user through Whatsapp or any other platform.
+One major design choice was made for the project as we decided to use Arduino Nano 33 BLE board as the main board in our design as it is more suitable to host the machine learning model for our project on chip. 
+The board contains an on-board microphone which makes it a perfect choice for our project as it allows us to take the input (the user's voice) run the model on it and take decisions based on it. the final design now utilizes ESP32 to receive commands and communicates with aruino to manipulate lighting control modes in different rooms.
 
 ### Challenges Faced in phase2:
-- 
+- software design to switch modes
+- Integrating all components together
 
 
 ### Overview of the implemented features in the project:
