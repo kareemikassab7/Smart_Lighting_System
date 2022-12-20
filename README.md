@@ -139,7 +139,7 @@ The board contains an on-board microphone which makes it a perfect choice for ou
 - system can be further improved with a GUI
 - Cost can be minimized if one board has the model and wifi
 ## 7. Conclusions
-
+System can be very useful in actually controlling the lighting in multiple rooms in a house conveniently and can track energy. though it has some limitations, it can be extended to be a comprehensive product given enough time.
 ## 8. References
 - https://docs.arduino.cc/resources/datasheets/ABX00031-datasheet.pdf
 - https://forum.arduino.cc/t/lighting-leds-by-time-schedule/118481
