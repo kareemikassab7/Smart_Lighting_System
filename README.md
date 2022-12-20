@@ -35,7 +35,7 @@ a smart lighting system will be needed in all of the future's smart homes. The s
 - users should be able to set lighting schedules from their phone
 - users should be able to set autmatic lighting when it gets dark
 - users should be able to monitor their consumption
-- 
+ 
 ### Proposed Features:
 * Light on clap
 * Light on voice command
@@ -47,6 +47,7 @@ a smart lighting system will be needed in all of the future's smart homes. The s
 
 
 ## 3. Design (S/W and H/W)
+
 ### Used Hardware Components
 * Light bulb / LED with range
 * Light sensor
@@ -55,7 +56,23 @@ a smart lighting system will be needed in all of the future's smart homes. The s
 * ESP32 WROOM-32 board
 
 ### Hardware Design
+- 4 LED's are used to simulate multiple rooms in a house. they are connected on A0 to A3
+- the light sensor is connected to the arduino analog port A6 to measure light intensity and signal to LEDs/rooms that have the autmatic mood to light on and off
+- the RTC D3231 module is connected to the arduino with SCL tto A5, SDA to A4, VCC to 3.3V, and GND to GND. it tracks time and we use it to compare the now time acquired by it to the user specificed schedules
+- Arduino Nano33 BLE board is our main board, it integrates all the code modules and connects to the other hardware components through its analog interfaces.
+- ESP 32 is used to let the user interface with whatsapp and through wifi then communicates with the arduino. it connects on the Tx and Rx ports.
+
 ### Software Design
+the code is modular with a function to handle each mode with the corresponding room in each iteration.
+<br>
+schedule_handler is a function to handle user input schedules <br>
+check_lighting is a function to compare the light sensor measurment and turn on or off based on the room's lighting<br>
+there is a final function for voice control that implements the ML model to recognize commands. <br>
+
+The main loop consists of a for loop that loops with an index i that represents a room in each iteration; in each iteration, we check an array that represents the mode of each room. taking the mode of the corresponding room, we go into a switch case statement to determine which function to execute, execute it, break, and repeat to go to the next room.
+
+### Flow Chart
+![image](https://user-images.githubusercontent.com/57846377/208563731-b9eb917e-914c-496d-b5e2-6bb05b2c212b.png)
 
 ## 4.Iterations done
 ## Phase1 Update:
@@ -76,8 +93,6 @@ https://drive.google.com/drive/u/0/folders/1edW1XKyQb-ulQsgd0SlEA5-SkaUFtDj7
 
 
 ![image](https://user-images.githubusercontent.com/57846377/204669973-d09e84c4-8e4b-47cf-a774-81e68088406b.png)
-
-
 
 ### Challenges faced:
 - could not find a way yet to integrate the machine learning model on the circuit with its own mic (in an actual system, its not practical at all to need a laptop with its mic to run the model, it needs to be deployed to the actual embedded system).
