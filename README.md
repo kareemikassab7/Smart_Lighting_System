@@ -1,12 +1,19 @@
 # G6: Smart Lighting System
 
+### Outline
+- (1) Background and Motivation
+- (2) Requirements/Features
+- (3) Design (S/W and H/W)
+- (4) Iterations done
+- (5) The final project status including demo videos
+- (6) Limitations and Future work
+- (7) Conclusions and (8) References
+
 ### authors
 **Kareem Kassab  900182771** <br>
 **Elsayed Zaki  900181637** <br>
 **Mohamed Roshdy  900183935**<br>
 **Abdelharman Fawzy  900183004**<br>
-
-### github repo:
 
 ## Proposed Idea:
 
