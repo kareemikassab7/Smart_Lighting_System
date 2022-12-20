@@ -49,6 +49,7 @@ a smart lighting system will be needed in all of the future's smart homes. The s
 - STM32CubeMX
 - Keil µVision
 
+## 4.Iterations done
 ## Phase1 Update:
 ![Demo1](https://i.ibb.co/x7qKy2d/Whats-App-Image-2022-11-30-at-2-25-44-AM.jpg)
 # Demo 1:
@@ -80,15 +81,14 @@ https://drive.google.com/drive/u/0/folders/1edW1XKyQb-ulQsgd0SlEA5-SkaUFtDj7
 -  scheduling lights on/off with timers
 - deploying model on-chip + using mic on chip
 
-
-
 ### Phase 2 Update:
 
 ### Design Update:
 One major design choice was made for the project as we decided to use Arduino Nano 33 BLE board as the main board in our design as it is more suitable to host the machine learning model for our project. 
 The board contains an on-board microphone which makes it a perfect choice for our project as it allows us to take the input (the user's voice) run the model on it and take decisions based on it. The board also supports WIFI which eliminates the need to use the ESP32 board in order to communicate with the user through Whatsapp or any other platform.
 
-### Challenges Faced:
+### Challenges Faced in phase2:
+- 
 
 
 ### Overview of the implemented features in the project:
@@ -98,17 +98,15 @@ The board contains an on-board microphone which makes it a perfect choice for ou
 * A scheduling system that allows the user to make the LEDs in the system turn on at certain periods throughout the day.
 *The system can adjust to the lights in the surrounding environment, meaning that it can detect if there is too much light around and turn off the LEDs in order to save power, it can also detect if it is dark around and turn on the LEDs accordingly.
 
-### Update system design
-
+## 5.The final project status (including demo videos)
+### final design
 ![SystemDesign](https://user-images.githubusercontent.com/92397424/208532200-da3be9a4-3b6c-44bd-9372-304cb05cf2b7.PNG)
 )
-
 ### How the System looks in real life:
-
-### How the system works:
-
-### demo videos of the system:
-
+### System Flow:
+### Demo videos of the system:
+## 6. Limitations and Future work
+## 7. Conclusions
 ## 8. References
 - https://docs.arduino.cc/resources/datasheets/ABX00031-datasheet.pdf
 - https://forum.arduino.cc/t/lighting-leds-by-time-schedule/118481
