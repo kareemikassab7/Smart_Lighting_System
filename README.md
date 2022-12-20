@@ -131,7 +131,15 @@ The board contains an on-board microphone which makes it a perfect choice for ou
 ### System Flow:
 ### Demo videos of the system:
 ## 6. Limitations and Future work
+### Limitations
+- system currently doesnt support adding more rooms dynamically
+- system is currently being controlled via whatsapp doesnt have attractive GUI
+### Future Work
+- system can be updated to be more extensible
+- system can be further improved with a GUI
+- Cost can be minimized if one board has the model and wifi
 ## 7. Conclusions
+
 ## 8. References
 - https://docs.arduino.cc/resources/datasheets/ABX00031-datasheet.pdf
 - https://forum.arduino.cc/t/lighting-leds-by-time-schedule/118481
